@@ -1,7 +1,7 @@
 locals {
   aws_alb_ingress_controller_docker_image = "docker.io/amazon/aws-alb-ingress-controller:v${var.aws_alb_ingress_controller_version}"
   aws_alb_ingress_controller_version      = var.aws_alb_ingress_controller_version
-  aws_alb_ingress_class                   = "alb"
+  aws_alb_ingress_class                   = var.aws_alb_ingress_class
   aws_vpc_id                              = data.aws_vpc.selected.id
   aws_region_name                         = data.aws_region.current.name
   aws_iam_path_prefix                     = var.aws_iam_path_prefix == "" ? null : var.aws_iam_path_prefix

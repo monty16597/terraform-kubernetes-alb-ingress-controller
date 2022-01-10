@@ -69,3 +69,9 @@ variable "aws_alb_ingress_controller_version" {
   type        = string
   default     = "1.1.7"
 }
+
+variable "aws_alb_ingress_class" {
+  description = "The AWS ALB Ingress Controller class name."
+  type        = string
+  default     = "alb"
+}
