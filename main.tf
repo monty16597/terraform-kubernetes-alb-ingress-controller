@@ -237,7 +237,7 @@ resource "kubernetes_service_account" "this" {
 
 resource "kubernetes_cluster_role" "this" {
   metadata {
-    name = "aws-alb-ingress-controller"
+    name = "poc-aws-alb-ingress-controller"
 
     labels = {
       "app.kubernetes.io/name"       = "aws-alb-ingress-controller"
@@ -294,7 +294,7 @@ resource "kubernetes_cluster_role" "this" {
 
 resource "kubernetes_cluster_role_binding" "this" {
   metadata {
-    name = "aws-alb-ingress-controller"
+    name = "poc-aws-alb-ingress-controller"
 
     labels = {
       "app.kubernetes.io/name"       = "aws-alb-ingress-controller"
